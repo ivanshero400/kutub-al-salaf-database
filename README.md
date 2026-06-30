@@ -4,10 +4,10 @@
 >
 > قاعدة بيانات قابلة للتحميل المباشر من بايثون بسطر واحد — 7,878 كتابًا في 40 تصنيفًا علميًا.
 
-[![Books Count](https://img.shields.io/badge/الكتب-7٬878-blue)](https://github.com/ivanshero400/كتب-السلف-داتابيز)
-[![Categories](https://img.shields.io/badge/التصنيفات-40-green)](https://github.com/ivanshero400/كتب-السلف-داتابيز)
-[![Authors](https://img.shields.io/badge/المؤلفون-2٬955-orange)](https://github.com/ivanshero400/كتب-السلف-داتابيز)
-[![License](https://img.shields.io/badge/الترخيص-مفتوح_المصدر-lightgrey)](https://github.com/ivanshero400/كتب-السلف-داتابيز)
+[![Books Count](https://img.shields.io/badge/الكتب-7٬878-blue)](https://github.com/ivanshero400/kutub-al-salaf-database)
+[![Categories](https://img.shields.io/badge/التصنيفات-40-green)](https://github.com/ivanshero400/kutub-al-salaf-database)
+[![Authors](https://img.shields.io/badge/المؤلفون-2٬955-orange)](https://github.com/ivanshero400/kutub-al-salaf-database)
+[![License](https://img.shields.io/badge/الترخيص-مفتوح_المصدر-lightgrey)](https://github.com/ivanshero400/kutub-al-salaf-database)
 
 ---
 
@@ -88,7 +88,7 @@
 import sqlite3, urllib.request
 
 # رابط الكتاب المطلوب (من INDEX.md)
-book_url = "https://raw.githubusercontent.com/ivanshero400/كتب-السلف-داتابيز/main/كتب/العقيدة/1.sqlite"
+book_url = "https://raw.githubusercontent.com/ivanshero400/kutub-al-salaf-database/main/كتب/العقيدة/1.sqlite"
 urllib.request.urlretrieve(book_url, "book_1.sqlite")
 
 # فتح الكتاب وقراءته
@@ -104,7 +104,7 @@ import sqlite3
 
 # تحميل الفهرس
 urllib.request.urlretrieve(
-    "https://raw.githubusercontent.com/ivanshero400/كتب-السلف-داتابيز/main/index.sqlite",
+    "https://raw.githubusercontent.com/ivanshero400/kutub-al-salaf-database/main/index.sqlite",
     "index.sqlite"
 )
 
@@ -131,15 +131,15 @@ for book in books[:10]:
 صيغة الرابط المباشر لأي كتاب:
 
 ```
-https://raw.githubusercontent.com/ivanshero400/كتب-السلف-داتابيز/main/كتب/{التصنيف}/{book_id}.sqlite
+https://raw.githubusercontent.com/ivanshero400/kutub-al-salaf-database/main/كتب/{التصنيف}/{book_id}.sqlite
 ```
 
 مثال:
 - الكتاب رقم 1 (العقيدة):
-  https://raw.githubusercontent.com/ivanshero400/كتب-السلف-داتابيز/main/كتب/العقيدة/1.sqlite
+  https://raw.githubusercontent.com/ivanshero400/kutub-al-salaf-database/main/كتب/العقيدة/1.sqlite
 
 - الكتاب رقم 45 (العقيدة):
-  https://raw.githubusercontent.com/ivanshero400/كتب-السلف-داتابيز/main/كتب/العقيدة/45.sqlite
+  https://raw.githubusercontent.com/ivanshero400/kutub-al-salaf-database/main/كتب/العقيدة/45.sqlite
 
 ---
 
